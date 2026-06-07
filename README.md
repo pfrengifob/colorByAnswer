@@ -1,13 +1,14 @@
 # Color By Answer
 
-An interactive educational web application where students solve exercises to progressively color SVG illustrations. The project is designed as a reusable activity engine, allowing educators to create new learning activities by simply replacing SVG drawings and JSON configuration files.
+An interactive educational web application where students solve exercises to progressively complete SVG-based activities. The engine supports multiple activity types, including coloring illustrations and revealing hidden objects.
 
 ## Features
 
 * Interactive SVG illustrations
 * Math-based learning activities
+* Multiple activity modes (`fill` and `reveal`)
 * Progressive coloring when answers are correct
-* Reusable activity structure
+* Reusable JSON-driven activity engine
 * Lightweight and easy to customize
 
 ## Technologies
@@ -37,25 +38,43 @@ color-by-answer/
 
 ## How It Works
 
+## How It Works
+
 1. The application loads an SVG illustration.
 2. A corresponding JSON file defines:
-
+   * Activity type
    * Exercises
    * Correct answers
-   * Fill colors
-3. Students click on a shape.
+   * Colors or reveal targets
+3. Students select an object.
 4. An exercise is displayed.
-5. If the answer is correct, the shape is colored.
-6. The activity is completed when all shapes are colored.
+5. If the answer is correct:
+   * In `fill` mode, the SVG element is colored.
+   * In `reveal` mode, a hidden colored object is revealed.
+6. The activity is completed when all objects have been solved.
 
 ## Example JSON Configuration
 
 ```json
+Fill Activity
 {
-  "sol": {
-    "operacion": "760 / 19",
-    "resultado": 40,
-    "color": "#FFD700"
+  "tipo": "fill",
+  "figuras": {
+    "sun": {
+      "operacion": "760 / 19",
+      "resultado": 40,
+      "color": "#FFD700"
+    }
+  }
+}
+Reveal Activity
+{
+  "tipo": "reveal",
+  "figuras": {
+    "wood": {
+      "operacion": "935 / 55",
+      "resultado": 17
+    }
   }
 }
 ```
@@ -68,8 +87,15 @@ color-by-answer/
 4. Define exercises, answers, and colors.
 5. Place both files inside the `actividades` folder.
 
-No changes to the application code are required.
+## Reveal Activities
 
+Reveal activities use two SVG elements for each object:
+* Grayscale version
+```html
+<image id="wood" />
+* Colored version
+<image id="color_wood" display="none" />
+```
 ## License
 
 This project is available for educational and personal use.

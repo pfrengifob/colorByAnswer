@@ -8,7 +8,7 @@
     flex:1;
 }
 .zona-svg svg{
-    width:100%;
+    width: 90%;
     height:auto;
     display:block;
     border: red;
@@ -28,8 +28,8 @@ svg{
     margin-bottom:20px;
 
 }
-.pintado{
-    transition: fill .6s ease;
+image.pintado{
+    transition: opacity .4s ease;
 }
 
 .panel-operacion{

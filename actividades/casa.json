@@ -1,111 +1,113 @@
-{
-  "nube1": {
-    "operacion": "255 / 17",
-    "resultado": 15,
-    "color": "#87CEEB"
-  },
-  "nube2": {
-    "operacion": "360 / 30",
-    "resultado": 12,
-    "color": "#87CEEB"
-  },
-  "nube3": {
-    "operacion": "575 / 23",
-    "resultado": 25,
-    "color": "#87CEEB"
-  },
-  "nube4": {
-    "operacion": "665 / 19",
-    "resultado": 35,
-    "color": "#87CEEB"
-  },
-  "nube5": {
-    "operacion": "765 / 17",
-    "resultado": 45,
-    "color": "#87CEEB"
-  },
+{ "tipo": "fill",
+    "figuras": {
+    "nube1": {
+      "operacion": "255 / 17",
+      "resultado": 15,
+      "color": "#87CEEB"
+    },
+    "nube2": {
+      "operacion": "360 / 30",
+      "resultado": 12,
+      "color": "#87CEEB"
+    },
+    "nube3": {
+      "operacion": "575 / 23",
+      "resultado": 25,
+      "color": "#87CEEB"
+    },
+    "nube4": {
+      "operacion": "665 / 19",
+      "resultado": 35,
+      "color": "#87CEEB"
+    },
+    "nube5": {
+      "operacion": "765 / 17",
+      "resultado": 45,
+      "color": "#87CEEB"
+    },
 
-  "sol": {
-    "operacion": "760 / 19",
-    "resultado": 40,
-    "color": "#FFD700"
-  },
+    "sol": {
+      "operacion": "760 / 19",
+      "resultado": 40,
+      "color": "#FFD700"
+    },
 
-  "tronco": {
-    "operacion": "2300 / 23",
-    "resultado": 100,
-    "color": "#8B5A2B"
-  },
+    "tronco": {
+      "operacion": "2300 / 23",
+      "resultado": 100,
+      "color": "#8B5A2B"
+    },
 
-  "arbol-hojas": {
-    "operacion": "1700 / 17",
-    "resultado": 100,
-    "color": "#4CAF50"
-  },
+    "arbol-hojas": {
+      "operacion": "1700 / 17",
+      "resultado": 100,
+      "color": "#4CAF50"
+    },
 
-  "techo-interior": {
-    "operacion": "195 / 13",
-    "resultado": 15,
-    "color": "#FFB6C1"
-  },
+    "techo-interior": {
+      "operacion": "195 / 13",
+      "resultado": 15,
+      "color": "#FFB6C1"
+    },
 
-  "techo-exterior": {
-    "operacion": "221 / 13",
-    "resultado": 17,
-    "color": "#FFA726"
-  },
+    "techo-exterior": {
+      "operacion": "221 / 13",
+      "resultado": 17,
+      "color": "#FFA726"
+    },
 
-  "casamuro": {
-    "operacion": "575 / 23",
-    "resultado": 25,
-    "color": "#F5F5DC"
-  },
+    "casamuro": {
+      "operacion": "575 / 23",
+      "resultado": 25,
+      "color": "#F5F5DC"
+    },
 
-  "puerta": {
-    "operacion": "1275 / 17",
-    "resultado": 75,
-    "color": "#A0522D"
-  },
+    "puerta": {
+      "operacion": "1275 / 17",
+      "resultado": 75,
+      "color": "#A0522D"
+    },
 
-  "ventana1": {
-    "operacion": "81 / 9",
-    "resultado": 9,
-    "color": "#D3D3D3"
-  },
+    "ventana1": {
+      "operacion": "81 / 9",
+      "resultado": 9,
+      "color": "#D3D3D3"
+    },
 
-  "ventana2": {
-    "operacion": "72 / 9",
-    "resultado": 8,
-    "color": "#D3D3D3"
-  },
+    "ventana2": {
+      "operacion": "72 / 9",
+      "resultado": 8,
+      "color": "#D3D3D3"
+    },
 
-  "ventana3": {
-    "operacion": "88 / 11",
-    "resultado": 8,
-    "color": "#D3D3D3"
-  },
+    "ventana3": {
+      "operacion": "88 / 11",
+      "resultado": 8,
+      "color": "#D3D3D3"
+    },
 
-  "ventana4": {
-    "operacion": "737 / 11",
-    "resultado": 67,
-    "color": "#D3D3D3"
-  },
+    "ventana4": {
+      "operacion": "737 / 11",
+      "resultado": 67,
+      "color": "#D3D3D3"
+    },
 
-  "bush1": {
-    "operacion": "850 / 17",
-    "resultado": 50,
-    "color": "#90EE90"
-  },
+    "bush1": {
+      "operacion": "850 / 17",
+      "resultado": 50,
+      "color": "#90EE90"
+    },
 
-  "bush2": {
-    "operacion": "1275 / 25",
-    "resultado": 51,
-    "color": "#90EE90"
-  },
+    "bush2": {
+      "operacion": "1275 / 25",
+      "resultado": 51,
+      "color": "#90EE90"
+    },
 
-  "chimenea": {
-    "operacion": "285 / 19",
-    "resultado": 15,
-    "color": "#B22222"
+    "chimenea": {
+      "operacion": "285 / 19",
+      "resultado": 15,
+      "color": "#B22222"
+    }
   }
 }

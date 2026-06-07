@@ -1,0 +1,29 @@
+{
+  "tipo": "reveal",
+  "figuras": {
+    "wood": {
+      "operacion": "935 / 55",
+      "resultado":17
+    },
+    "stone": {
+      "operacion": "540 / 36",
+      "resultado":15
+    },
+    "iron": {
+      "operacion": "648 / 12",
+      "resultado":54
+    },
+    "gold": {
+      "operacion": "192 / 64",
+      "resultado":3
+    },
+    "diamond": {
+      "operacion": "391 / 67",
+      "resultado":23
+    },
+    "netherite": {
+      "operacion": "219 / 73",
+      "resultado":3
+    }
+  }
+}

@@ -1,10 +1,14 @@
 let actividades = {};
+let tipoActividad = "fill";
 
 let objetoActual = null;
 let completadas = 0;
 let totalActividades = 0;
 
-const actividad = "casa";
+const params = new URLSearchParams(window.location.search);
+
+const actividad =
+    params.get("actividad") || "casa";
 
 const operacionEl = document.getElementById("operacion");
 const mensajeEl = document.getElementById("mensaje");
@@ -41,7 +45,11 @@ async function cargarJSON() {
     const respuesta =
         await fetch(`actividades/${actividad}.json`);
 
-    actividades = await respuesta.json();
+    const data = await respuesta.json();
+
+    tipoActividad = data.tipo || "fill";
+
+    actividades = data.figuras || {};
 
     totalActividades =
         Object.keys(actividades).length;
@@ -70,6 +78,7 @@ function prepararFiguras() {
         if (!actividades[id]) return;
 
         seleccionarFigura(id);
+        
     });
 }
 
@@ -118,19 +127,7 @@ function validar() {
 
     if (respuesta === objetoActual.resultado) {
 
-        const figura =
-            document.getElementById(
-                objetoActual.id
-            );
-
-        figura.style.fill =
-            objetoActual.color;
-
-        figura.classList.add("pintado");
-
-        figura.classList.remove(
-            "seleccionado"
-        );
+         resolverFigura();
 
         completadas++;
 
@@ -154,7 +151,27 @@ function validar() {
             "❌ Incorrecto";
     }
 }
+function resolverFigura() {
+  const figura = document.getElementById(objetoActual.id);
 
+  if (!figura) return;
+
+  if (tipoActividad === "fill") {
+    figura.style.fill = objetoActual.color;
+  } else if (tipoActividad === "reveal") {
+    const figuraColor = document.getElementById("color_" + objetoActual.id);
+
+    if (figuraColor) {
+      figura.setAttribute("display", "none");
+
+      figuraColor.setAttribute("display", "inline");
+    }
+  }
+
+  figura.classList.add("pintado");
+
+  figura.classList.remove("seleccionado");
+}
 respuestaEl.addEventListener(
     "keydown",
     e => {
