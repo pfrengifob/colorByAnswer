@@ -90,10 +90,10 @@ Reveal Activity
 ## Reveal Activities
 
 Reveal activities use two SVG elements for each object:
-* Grayscale version
 ```html
+Grayscale version
 <image id="wood" />
-* Colored version
+Colored version
 <image id="color_wood" display="none" />
 ```
 ## License
