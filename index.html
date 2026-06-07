@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+    
+<body>
+    <div class="contenedor">
+        <div class="zona-svg">
+            <div id="svg-container"></div>
+        </div>
+
+        <div class="zona-control">
+            <h1> Colorea Resolviendo</h1>
+            <div class="instrucciones">
+                <h2>¿Cómo jugar?</h2>
+                <ol>
+                    <li>Haz clic sobre una figura.</li>
+                    <li>Resuelve la operación.</li>
+                    <li>Escribe la respuesta.</li>
+                    <li>Presiona "Comprobar".</li>
+                    <li>Si es correcta, la figura se coloreará.</li>
+                    <li>Completa todas las figuras para terminar el dibujo.</li>
+                </ol>
+            </div>
+
+            <div class="panel-operacion">
+            <div id="operacion"></div>
+
+            <input
+                type="number"
+                id="respuesta"
+                autocomplete="off">
+
+            <button onclick="validar()">
+                Comprobar
+            </button>
+
+            <div id="mensaje"></div>
+
+        </div>
+
+        <div id="progreso">
+
+            <p>Progreso: <span id="contador">0 / 19</span></p>
+
+        </div>
+    </div>
+    
+    
+    
+    
+   
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

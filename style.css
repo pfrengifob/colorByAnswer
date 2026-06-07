@@ -1,0 +1,80 @@
+.contenedor{
+
+    display:flex;
+    align-items:flex-start;
+}
+
+.zona-svg{
+    flex:1;
+}
+.zona-svg svg{
+    width:100%;
+    height:auto;
+    display:block;
+    border: red;
+}
+
+svg{
+    border:1px solid blue;
+}
+.zona-control{
+    width:350px;
+    min-width:350px;
+}
+.instrucciones{
+    background:#ffd8d8;
+    padding:15px;
+    border-radius:10px;
+    margin-bottom:20px;
+
+}
+.pintado{
+    transition: fill .6s ease;
+}
+
+.panel-operacion{
+    text-align:center;
+    margin-top:20px;
+}
+
+#respuesta{
+    width:120px;
+    font-size:24px;
+    text-align:center;
+}
+
+#mensaje{
+    margin-top:10px;
+    font-weight:bold;
+}
+.interactivo{
+    cursor:pointer;
+}
+.interactivo:hover{
+    filter:drop-shadow(0 0 10px #00aaff);
+    opacity:.8;
+
+}
+.seleccionado{
+    filter:drop-shadow(0 0 15px orange);
+}
+
+.panel-operacion{
+    text-align:center;
+    margin-top:20px;
+}
+
+#operacion{
+
+    font-size:40px;
+    font-weight:bold;
+    text-align:center;
+    margin-bottom:15px;
+}
+
+#respuesta{
+    width:120px;
+    padding:8px;
+    font-size:22px;
+    text-align:center;
+}
